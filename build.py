@@ -57,7 +57,7 @@ objdir="${kernel_dir}/out"
 anykernel=$HOME/anykernel
 builddir="${kernel_dir}/build"
 ZIMAGE=$kernel_dir/out/arch/arm64/boot/Image.gz-dtb
-kernel_name="xcalibur-v2.1-violet"
+kernel_name="xcalibur-v2.1-violet-kernelsu"
 zip_name="$kernel_name-$(date +"%d%m%Y-%H%M").zip"
 TC_DIR=$HOME/tc/
 CLANG_DIR=$TC_DIR/clang-r487747
@@ -69,7 +69,7 @@ export PATH="$CLANG_DIR/bin:$PATH"
 
 #start off by sending a trigger msg
 tg_post_sticker
-tg_post_msg "<b>Kernel Build Triggered ⌛</b>%0A<b>===============</b>%0A<b>Kernel : </b><code>$kernel_name</code>%0A<b>Machine : </b><code>$os</code>%0A<b>Cores : </b><code>$cores</code>%0A<b>Time : </b><code>$time</code>"
+tg_post_msg "<b>Kernel Build Triggered (KernelSU) ⌛</b>%0A<b>===============</b>%0A<b>Kernel : </b><code>$kernel_name</code>%0A<b>Machine : </b><code>$os</code>%0A<b>Cores : </b><code>$cores</code>%0A<b>Time : </b><code>$time</code>"
 
 if ! [ -d "$TC_DIR" ]; then
     echo "Toolchain not found! Cloning to $TC_DIR..."
