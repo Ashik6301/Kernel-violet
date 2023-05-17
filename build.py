@@ -67,6 +67,9 @@ export KBUILD_BUILD_HOST=SuperiorOS
 export KBUILD_BUILD_USER=Joker-V2
 export PATH="$CLANG_DIR/bin:$PATH"
 
+# Sync submodule
+git submodule init && git submodule update
+
 #start off by sending a trigger msg
 tg_post_sticker
 tg_post_msg "<b>Kernel Build Triggered (KernelSU) ⌛</b>%0A<b>===============</b>%0A<b>Kernel : </b><code>$kernel_name</code>%0A<b>Machine : </b><code>$os</code>%0A<b>Cores : </b><code>$cores</code>%0A<b>Time : </b><code>$time</code>"
