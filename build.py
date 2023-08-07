@@ -57,14 +57,14 @@ objdir="${kernel_dir}/out"
 anykernel=$HOME/anykernel
 builddir="${kernel_dir}/build"
 ZIMAGE=$kernel_dir/out/arch/arm64/boot/Image.gz-dtb
-kernel_name="xcalibur-v2.3-violet"
+kernel_name="xcalibur-v2.4-violet"
 zip_name="$kernel_name-$(date +"%d%m%Y-%H%M").zip"
 TC_DIR=$HOME/tc/
 CLANG_DIR=$TC_DIR/clang-r498229
 export CONFIG_FILE="vendor/violet-perf_defconfig"
 export ARCH="arm64"
-export KBUILD_BUILD_HOST=SuperiorOS
-export KBUILD_BUILD_USER=Joker-V2
+export KBUILD_BUILD_HOST=SKAshik
+export KBUILD_BUILD_USER=AshikRahman
 export PATH="$CLANG_DIR/bin:$PATH"
 
 #start off by sending a trigger msg
