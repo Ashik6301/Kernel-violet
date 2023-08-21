@@ -133,9 +133,3 @@ Android.bp
 
 # Ignore out dir
 out
-# build-dir
-out/
-upgrade_audio.sh
-upgrade_wifi.sh
-build.sh
-KernelSU
